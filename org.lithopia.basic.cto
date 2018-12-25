@@ -1,0 +1,84 @@
+/**
+ * Sample business network definition.
+ */
+namespace org.lithopia.basic
+/**
+ * Location in Lithopia visible to satellites owned by a Lithopian
+ */
+asset LithopiaPlace identified by name {
+  o String name
+  o Flagcolor[] flagColors optional
+  o Flagcolor[] requestSources optional 
+  o Flagcolor[] datasetIds optional
+  o String owner
+}
+/**
+ * An abstract transaction that is related to a LithopiaPlace
+ */
+abstract transaction LithopiaPlaceTransaction {
+  --> LithopiaPlace place
+}
+/**
+ * A satellite reading for a GPS location identifying a color
+ */
+transaction Flagcolor extends LithopiaPlaceTransaction {
+  o String flagColor 
+  o String requestSource 
+  o String datasetId
+}
+/**
+ * Changing the owner of the place based on the color identified by a satellite
+ */
+transaction LithopiaPlaceSold extends LithopiaPlaceTransaction {
+  -->Lithopian newOwner
+}
+/**
+* Announcing a change of ownership of a place
+ */
+event LithopiaPlaceTransactions {
+  --> LithopiaPlace place
+  o String newOwner
+}
+/**
+ * Marriage contract in Lithopia 
+ */
+asset LithopiaMarriage identified by name {
+  o String name
+  o String period
+  o Partners[] partners optional
+}
+
+/**
+ * Partnering, friendship and marriages  in Lithopia 
+ */
+abstract transaction LithopiaPartnering {
+  -->LithopiaMarriage contract
+}
+
+/**
+ * Lithopians entering some contract in pairs or groups 
+ */
+transaction Partners extends LithopiaPartnering {
+  o String[] newPartner
+}
+/**
+ * Announcing a marriage between individuals in Lithopia  
+ */
+event NewPartnershipinLithopia {
+  -->LithopiaMarriage contract
+  o Partners[] partners
+}
+/**
+ * Marrying someone or few people  in Lithopia  
+ */
+transaction Marriage extends LithopiaPartnering {
+   -->Lithopian partnerMarriage
+}
+/**
+ *  Lithopian living in Lithopia
+ */
+participant Lithopian identified by name {
+  o String name
+  o String status optional 
+}
+
