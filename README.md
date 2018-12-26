@@ -83,6 +83,31 @@ chmod u+x prereqs-ubuntu.sh
 ./prereqs-ubuntu.sh  
 ```
 
+this bit us before, cuoldnt start the rest server because of gPRC node module issues  
+#### rebuild grpc
+`cd ~/.nvm//versions/node/v8.14.1/lib/node_modules/composer-rest-server`
+`npm rebuild`
+
+#### redeploy
+`./tearDownFabric`
+
+1. remove preconfigurations previous cards and identities  
+`rm -fr ~/.composer`
+
+2. re-create the admin card  
+`./createPeerAdminCard.sh`
+
+3. if using the same bna, no need to yo it again  
+```
+composer network install --card PeerAdmin@hlfv1 --archiveFile ~/fabric-dev-servers/lithopia/lithopia@0.0.1.bna
+```
+
+4. re-start network  
+`composer network start --networkName lithopia --networkVersion 0.0.1 --networkAdmin admin --networkAdminEnrollSecret adminpw --card PeerAdmin@hlfv1 --file networkadmin.card`
+
+5. start rest   
+`composer-rest-server -c admin@lithopia -n never -u true -w true`
+
 #### LINKS
 
 * [How to build a blockchain network using Hyperledger Fabric and Composer](https://medium.freecodecamp.org/how-to-build-a-blockchain-network-using-hyperledger-fabric-and-composer-e06644ff801d) - A tutorial for new blockchain developers
