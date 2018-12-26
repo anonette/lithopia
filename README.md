@@ -64,7 +64,7 @@ unzip fabric-dev-servers.zip
 `composer card import --file networkadmin.card	`  
 
 10. composer-rest-server  
-`composer-rest-server -c admin@lithopia -n never -u true -w true'
+`composer-rest-server -c admin@lithopia -n never -u true -w true`
 	
 #### RESET
 ```
