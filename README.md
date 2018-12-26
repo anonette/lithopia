@@ -1,7 +1,8 @@
 
 
-#### CLEAN & RESTART 
-0. First clean  
+#### CLEAN
+(following official uninstall [guide](https://hyperledger.github.io/composer/latest/installing/uninstall-dev-env.html) )
+  
 ```
 npm uninstall -g composer-cli  composer-rest-server generator-hyperledger-composer
 rm -rf ~/.composer
@@ -15,22 +16,14 @@ export FABRIC_VERSION=hlfv12
 clear tools and script folder
 'rm -rf ~/fabric-dev-servers'
 
-(following official uninstall [guide](https://hyperledger.github.io/composer/latest/installing/uninstall-dev-env.html) )
-
-1. Composer CLI tools: 
-`npm install -g composer-cli`  
-`npm install -g composer-cli@unstable`  
-
-2. REST:  
-`npm install -g composer-rest-server`  
-`npm install -g composer-rest-server@unstable`  
-
-3. Some things for generating code:  
+#### start
+0. make sure we use the right node version
 ```
-npm install -g generator-hyperledger-composer  
-npm install -g yo  
-npm install -g yo generator-hyperledger-composer  
+nvm install v8
+nvm use v8
 ```
+1. install node packages, CLI tools, rest server and generators: 
+`npm install -g composer-cli@0.20 composer-rest-server@0.20 generator-hyperledger-composer@0.20 yo`
 
 4. Hyperledger Fabric runtime to deploy  
 ```
