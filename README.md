@@ -17,13 +17,17 @@ clear tools and script folder
 'rm -rf ~/fabric-dev-servers'
 
 #### START
+from the [docs](https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial.html)
+
 0. make sure we use the right node version
 ```
 nvm install v8
 nvm use v8
 ```
-1. install node packages, CLI tools, rest server and generators: 
-`npm install -g composer-cli@0.20 composer-rest-server@0.20 generator-hyperledger-composer@0.20 yo`
+1. install node packages, CLI tools, rest server and generators
+```
+npm install -g composer-cli@0.20 composer-rest-server@0.20 generator-hyperledger-composer@0.20 yo
+```
 
 4. Hyperledger Fabric runtime to deploy  
 ```
@@ -46,8 +50,6 @@ unzip fabric-dev-servers.zip
 
 7) then create a businesse network over YO  
 `yo hyperledger-composer:businessnetwork`   
-https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial.html  
-
 
 8) yo hyperledger-composer:businessnetwork  
 `composer archive create -t dir -n .`  
@@ -74,6 +76,7 @@ composer network upgrade -c PeerAdmin@hlfv1 -n lithopia -V 0.0.1
 composer network install -c PeerAdmin@hlfv1 -n lithopia -V 0.0.1  
 ```
 #### PREREQ  
+from the [docs](https://hyperledger.github.io/composer/latest/installing/installing-prereqs.html)  
 ```
 curl -O https://hyperledger.github.io/composer/latest/prereqs-ubuntu.sh  
 chmod u+x prereqs-ubuntu.sh  
