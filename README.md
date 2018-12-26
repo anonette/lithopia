@@ -1,18 +1,21 @@
 
-* [How to build a blockchain network using Hyperledger Fabric and Composer](https://medium.freecodecamp.org/how-to-build-a-blockchain-network-using-hyperledger-fabric-and-composer-e06644ff801d) - A tutorial for new blockchain developers
-* [REST-server wiki](https://github.com/hyperledger/composer/wiki/REST-Server)
-* [upgrading-bna](https://hyperledger.github.io/composer/v0.19/business-network/upgrading-bna)
-* [development-tools](https://hyperledger.github.io/composer/latest/installing/development-tools.html)
-* [update-dev-en](https://hyperledger.github.io/composer/latest/installing/update-dev-env.html)
 
 #### CLEAN & RESTART 
 0. First clean  
 ```
-npm uninstall -g composer-cli  
-npm uninstall -g composer-rest-server  
-npm uninstall -g generator-hyperledger-composer  
+npm uninstall -g composer-cli  composer-rest-server generator-hyperledger-composer
+rm -rf ~/.composer
 ```
-(more [here](https://hyperledger.github.io/composer/latest/installing/uninstall-dev-env.html) )
+stop and teardown the docker setup
+```
+export FABRIC_VERSION=hlfv12
+~/fabric-dev-servers/stopFabric.sh
+~/fabric-dev-servers/teardownFabric.sh
+```
+clear tools and script folder
+'rm -rf ~/fabric-dev-servers'
+
+(following official uninstall [guide](https://hyperledger.github.io/composer/latest/installing/uninstall-dev-env.html) )
 
 1. Composer CLI tools: 
 `npm install -g composer-cli`  
@@ -83,3 +86,11 @@ curl -O https://hyperledger.github.io/composer/latest/prereqs-ubuntu.sh
 chmod u+x prereqs-ubuntu.sh  
 ./prereqs-ubuntu.sh  
 ```
+
+#### Links
+
+* [How to build a blockchain network using Hyperledger Fabric and Composer](https://medium.freecodecamp.org/how-to-build-a-blockchain-network-using-hyperledger-fabric-and-composer-e06644ff801d) - A tutorial for new blockchain developers
+* [REST-server wiki](https://github.com/hyperledger/composer/wiki/REST-Server)
+* [upgrading-bna](https://hyperledger.github.io/composer/v0.19/business-network/upgrading-bna)
+* [development-tools](https://hyperledger.github.io/composer/latest/installing/development-tools.html)
+* [update-dev-en](https://hyperledger.github.io/composer/latest/installing/update-dev-env.html)
