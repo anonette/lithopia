@@ -13,8 +13,8 @@ export FABRIC_VERSION=hlfv12
 ~/fabric-dev-servers/stopFabric.sh
 ~/fabric-dev-servers/teardownFabric.sh
 ```
-clear tools and script folder
-'rm -rf ~/fabric-dev-servers'
+clear tools and script folder  
+`rm -rf ~/fabric-dev-servers`
 
 #### START
 from the [docs](https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial.html)
@@ -29,41 +29,41 @@ nvm use v8
 npm install -g composer-cli@0.20 composer-rest-server@0.20 generator-hyperledger-composer@0.20 yo
 ```
 
-4. Hyperledger Fabric runtime to deploy  
+2. Hyperledger Fabric runtime to deploy  
 ```
 #Create a directory and let's name it fabric-tools  
 mkdir ~/fabric-tools && cd ~/fabric-tools  
 ```
 	
-5. inside fabric-tools:  
+3. inside fabric-tools:  
 ```
 curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.zip  
 unzip fabric-dev-servers.zip  
 ```
 
-6. run a local Hyperledger Fabric runtime.  
+4. run a local Hyperledger Fabric runtime.  
 ```
 ./downloadFabric.sh  
 ./startFabric.sh  
 ./createPeerAdminCard.sh  
 ```
 
-7) then create a businesse network over YO  
+5. then create a businesse network over YO  
 `yo hyperledger-composer:businessnetwork`   
 
-8) yo hyperledger-composer:businessnetwork  
+6. yo hyperledger-composer:businessnetwork  
 `composer archive create -t dir -n .`  
 
-9) install the composer runtime with:  
+7. install the composer runtime with:  
 `composer network install --card PeerAdmin@hlfv1 --archiveFile lithopia@0.0.1.bna` 
 
-10) deploy the business network:  
+8. deploy the business network:  
 `composer network start --networkName lithopia --networkVersion 0.0.1 --networkAdmin admin --networkAdminEnrollSecret adminpw --card PeerAdmin@hlfv1 --file networkadmin.card`
 	
-11) import the network administrator card into the network:  
+9. import the network administrator card into the network:  
 `composer card import --file networkadmin.card	`  
 
-12) composer-rest-server  
+10. composer-rest-server  
 `composer-rest-server -c admin@lithopia -n never -u true -w true'
 	
 #### RESET
