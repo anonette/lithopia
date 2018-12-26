@@ -16,7 +16,7 @@ export FABRIC_VERSION=hlfv12
 clear tools and script folder
 'rm -rf ~/fabric-dev-servers'
 
-#### start
+#### START
 0. make sure we use the right node version
 ```
 nvm install v8
@@ -64,7 +64,7 @@ https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial.html
 12) composer-rest-server  
 `composer-rest-server -c admin@lithopia -n never -u true -w true'
 	
-#### TO RESET
+#### RESET
 ```
 composer network reset -c admin@example-network  
 #change the files in the model & lib of lithopia  
@@ -80,7 +80,7 @@ chmod u+x prereqs-ubuntu.sh
 ./prereqs-ubuntu.sh  
 ```
 
-#### Links
+#### LINKS
 
 * [How to build a blockchain network using Hyperledger Fabric and Composer](https://medium.freecodecamp.org/how-to-build-a-blockchain-network-using-hyperledger-fabric-and-composer-e06644ff801d) - A tutorial for new blockchain developers
 * [REST-server wiki](https://github.com/hyperledger/composer/wiki/REST-Server)
