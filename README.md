@@ -6,13 +6,13 @@
 * [update-dev-en](https://hyperledger.github.io/composer/latest/installing/update-dev-env.html)
 
 #### CLEAN & RESTART 
-First clean  
+0. First clean  
 ```
 npm uninstall -g composer-cli  
 npm uninstall -g composer-rest-server  
 npm uninstall -g generator-hyperledger-composer  
 ```
-more [here](https://hyperledger.github.io/composer/latest/installing/uninstall-dev-env.html) 
+(more [here](https://hyperledger.github.io/composer/latest/installing/uninstall-dev-env.html) )
 
 1. Composer CLI tools: 
 `npm install -g composer-cli`  
