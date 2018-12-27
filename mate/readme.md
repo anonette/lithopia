@@ -1,4 +1,9 @@
-whats running on django
+
+### How To Restart ?
+
+you can just restart the server, the nginx is runing as service on startup
+
+### whats running on django
 ```
 /home/mate⟫ ps -aux | grep guni
 mate     17803  0.0  0.7  88272 14484 ?        Ss   Dec23   1:42 /home/mate/Envs/lithopia/bin/python3.7 /home/mate/Envs/lithopia/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock lithopia_server.wsgi:application
@@ -26,4 +31,4 @@ server {
 }
 ```
 
-### How To Restart ?
+
