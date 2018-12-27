@@ -1,4 +1,25 @@
 
+#### After Restart
+```
+cd ~/fabric-dev-servers
+
+./startFabric.sh
+
+composer network install --card PeerAdmin@hlfv1 --archiveFile ~/fabric-dev-servers/lithopia/lithopia@0.0.1.bna
+
+composer network start --networkName lithopia --networkVersion 0.0.1 --networkAdmin admin --networkAdminEnrollSecret adminpw --card PeerAdmin@hlfv1 --file networkadmin.card
+
+#check you have the peerAdminCards
+composer card list 
+
+#to run in terminal
+composer-rest-server -c admin@lithopia -n never -u true -w true
+#or to run in background
+pm2 start runRest
+
+#run node-red
+pm2 start node-red
+```
 
 #### CLEAN
 (following official uninstall [guide](https://hyperledger.github.io/composer/latest/installing/uninstall-dev-env.html) )
