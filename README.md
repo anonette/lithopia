@@ -1,3 +1,25 @@
+## Lithopia Dashboard in Node-RED
+This is a design fiction dashboard for Lithopians used to follow satellites (and drones) in order to transact over Hyperledger Composer/Fabric based smart contracts, to follow the LiCoin cryptocurrency and its relations to the Lithium sentiments and markets. 
+In the [LithopiaNodeRed.json](https://github.com/anonette/lithopia/blob/master/LithopiaNodeRed.json) file there are **three columns**:
+### Basic info
+**Basic info on Lithopia, Lithopians, their properties, marriages and partnerships**
+ 1. **Retro LCD display:** courtesy of Peter Scargill https://tech.scargill.net/lcd-display-for-node-red/
+ 2. **Openweather widget**: courtesy of FRED http://developers.sensetecnic.com/article/a-node-red-flow-to-monitor-the-weather/ to which I added text-to-speech node for weather announcement.
+ 3. **Openweather icon**: generating and showing html objects IMG based on 
+https://flows.nodered.org/flow/2f1aaf0635f9bf23207152682323240a 
+Trick is to createthe payload with the tags  in a  function-node and then in the template-node just represent it with `<div ng-bind-html="msg.payload"></div>`
+ 4. **Texfields on Lithopians, property, marriages**: all use http-node with get command to query the REST-API composer contract on http://anonette.net:3000/explorer and with switch-node and JSONATA get the requesteddata out of the  complex JSON, basic JSONARA https://docs.jsonata.org/string-functions.html
+https://console.bluemix.net/docs/services/IoT/GA_information_management/mapping_expression_language.html#mapping_expression 
+To test also http://try.jsonata.org/. Useful resource to learn how to work with SWITCH  - courtesy [Steve Cope from min 10.](https://www.youtube.com/watch?v=PbEoHxFOdmE&fbclid=IwAR2rvMT7lKdwk8LwGtcBF7V29AhJ-GAr07tJrVVXCyeA-ZFwSb6hy_akhzo)
+### Transactions
+**Info on the Sentinel2A satellite position, view on Earth from ISS, forms to blockchain transactions on how to become Lithopian, register a property or parnership**
+ 5. **Tracking satellites on a map:** important to get the TLE data for the satellite nodes from  [https://www.celestrak.com/NORAD/elements/supplemental/](https://www.celestrak.com/NORAD/elements/supplemental/)
+then use instructions from [node-red-satellites node](https://flows.nodered.org/node/node-red-contrib-satellites) and [world-map-node](https://flows.nodered.org/node/node-red-contrib-web-worldmap).
+ 6. **ISS real time video of Earth**:  just video embedded in node-red templat.
+ 7. **Hyperleder Composer REST API post commands**: allowing participants to register on the blockchain their names, property and type of partnerships.
+ ### **Markets**
+ 8. Twitter sentiments
+ 9. Cryptocurrency exchange rates
 
 #### After Restart
 ```
