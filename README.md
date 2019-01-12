@@ -64,102 +64,93 @@ Possible transactions: change ownership of property, become part of a parnership
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/* global getParticipantRegistry getAssetRegistry getFactory */
+ /**
+ * Sample business network definition.
+ */
+namespace org.lithopia.basic
 /**
-* A satellite color reading has been received
-* @param  {org.lithopia.basic.Flagcolor}  flagcolor - the Flagcolor transaction
-* @transaction
-*/
-async  function  flagColor(flagcolor) { // eslint-disable-line no-unused-vars
-const  place  =  flagcolor.place;
-//console.log('Checking the flag color ' + flagcolor.flagColor + ' to place ' + flagcolor.$name);
-if (place.flagColors) {
-place.flagColors.unshift(flagcolor);
-place.requestSources.unshift(flagcolor);
-place.datasetIds.unshift(flagcolor);
-} else {
-place.flagColors  = [flagcolor];
-place.requestSources  = [flagcolor];
-place.datasetIds  = [flagcolor];
-}
-// add the satelliteReading to the Lithopian Place
-const  placeRegistry  =  await  getAssetRegistry('org.lithopia.basic.LithopiaPlace');
-await  placeRegistry.update(place);
+ * Location in Lithopia visible to satellites owned by a Lithopian
+ */
+asset LithopiaPlace identified by name {
+  o String name
+  o Flagcolor[] flagColors optional
+  o Flagcolor[] requestSources optional 
+  o Flagcolor[] datasetIds optional
+  o String owner
 }
 /**
-* LithopiaPlaceSold transaction triggered by satellite data changing the owner of a property
-* @param  {org.lithopia.basic.LithopiaPlaceSold}  lithopiaPlaceSold - the LithopianPlaceSold transaction
-* @transaction
-*/
-async  function  selling(lithopiaPlaceSold) { // eslint-disable-line no-unused-vars
-const  place  =  lithopiaPlaceSold.place;
-const  flag  =  place.flagColors[0].flagColor;
-// if thecolor didn't change, the owner remains
-if (flag  ===  'red'){
-place.owner  =  lithopiaPlaceSold.newOwner.name;
-}
-else{
-place.owner  =  lithopiaPlaceSold.place.owner;
-}
-// update the newOwner
-const  assetRegistry  =  await  getAssetRegistry('org.lithopia.basic.LithopiaPlace');
-await  assetRegistry.update(place);
-// emit who is the old or new owner
-let  placeEvent  =  getFactory().newEvent('org.lithopia.basic', 'LithopiaPlaceTransactions');
-placeEvent.place  =  lithopiaPlaceSold.place;
-placeEvent.newOwner  =  place.owner;
-emit(placeEvent);
+ * An abstract transaction that is related to a LithopiaPlace
+ */
+abstract transaction LithopiaPlaceTransaction {
+  --> LithopiaPlace place
 }
 /**
-* Lithopians entering partnership contract
-* @param  {org.lithopia.basic.Partners}  partnering - the Partners transaction
-* @transaction
-*/
-async  function  partnering(partnering) { // eslint-disable-line no-unused-vars
-const  contract  =  partnering.contract;
-if (contract.partners) {
-contract.partners.push(partnering);
-}
-else{
-contract.partners  = [partnering];
-}
-// add the partners to the contract
-const  placeRegistry  =  await  getAssetRegistry('org.lithopia.basic.LithopiaMarriage');
-await  placeRegistry.update(contract);
-// emit the new partnership in Lithopia
-let  partnerEvent  =  getFactory().newEvent('org.lithopia.basic', 'NewPartnershipinLithopia');
-partnerEvent.contract  =  partnering.contract;
-partnerEvent.partners  =  partnering.contract.partners;
-emit(partnerEvent);
+ * A satellite reading for a GPS location identifying a color
+ */
+transaction Flagcolor extends LithopiaPlaceTransaction {
+  o String flagColor 
+  o String requestSource 
+  o String datasetId
 }
 /**
-* LithopiaMarriage transaction changng the status of some partners
-* @param  {org.lithopia.basic.Marriage}  marrying - the LithopianPlaceSold transaction
-* @transaction
-*/
-async  function  married(marrying) { // eslint-disable-line no-unused-vars
-const  partner  =  marrying.partnerMarriage;
-const  partners  =  marrying.contract.partners;
-//console.log(Object.values(partners));
-//console.log(partners[0].newPartner);
-//console.log(partner.name);
-//console.log(partner);
-let  i;
-for (i=0; i  <  partners.length; i++){
-if (partners[i].newPartner.includes(partner.name)){
-partner.status  =  "Married";
+ * Changing the owner of the place based on the color identified by a satellite
+ */
+transaction LithopiaPlaceSold extends LithopiaPlaceTransaction {
+  -->Lithopian newOwner
 }
-else
-{
-partner.status  =  "Single";
+/**
+* Announcing a change of ownership of a place
+ */
+event LithopiaPlaceTransactions {
+  --> LithopiaPlace place
+  o String newOwner
 }
+/**
+ * Marriage contract in Lithopia 
+ */
+asset LithopiaMarriage identified by name {
+  o String name
+  o String period
+  o Partners[] partners optional
 }
-// change the status of the partnership based on enum
-const  participantRegistry  =  await  getParticipantRegistry('org.lithopia.basic.Lithopian');
-await  participantRegistry.update(partner);
+
+/**
+ * Partnering, friendship and marriages  in Lithopia 
+ */
+abstract transaction LithopiaPartnering {
+  -->LithopiaMarriage contract
 }
-**JS file defining transactions:**
-/* global getParticipantRegistry getAssetRegistry getFactory */
+
+/**
+ * Lithopians entering some contract in pairs or groups 
+ */
+transaction Partners extends LithopiaPartnering {
+  o String[] newPartner
+}
+/**
+ * Announcing a marriage between individuals in Lithopia  
+ */
+event NewPartnershipinLithopia {
+  -->LithopiaMarriage contract
+  o Partners[] partners
+}
+/**
+ * Marrying someone or few people  in Lithopia  
+ */
+transaction Marriage extends LithopiaPartnering {
+   -->Lithopian partnerMarriage
+}
+/**
+ *  Lithopian living in Lithopia
+ */
+participant Lithopian identified by name {
+  o String name
+  o String status optional 
+}
+```
+**JS logic file** 
+ ```
+ /* global getParticipantRegistry getAssetRegistry getFactory */
 /**
 * A satellite color reading has been received
 * @param  {org.lithopia.basic.Flagcolor}  flagcolor - the Flagcolor transaction
