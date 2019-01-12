@@ -1,3 +1,12 @@
+#LITHOPIA/LITHOPY project
+Design fiction prototype using Hyperldger Composer and Fabric to build a blockchain solution and smart contracts for a fictional village called Lithopia in Czech republic.  The project is inspired by stories from the Cinovec region of a facades of family houses covered in lithium powder. In the 1980s, the former miners had regarded lithium’s glittering powder as junk material freely available for the exterior decoration of houses. During 2017 elections the Czech Republic went through a Lithium craze without having ever mined a single grain of lithium ore. The winning party scored extra 10 percent points for promising a lithium paradise for all. As response to the populist promise and the ongoing speculation in Lithium, the Lithopy team created its own fairy-tale scenario. In Lithopy, all sorts of promises and three sorts of mining come together: mineral extraction, big data mining and blockchain mining. The multiscreen movie tahta accompanies the prototypes  advertises a Sunny Day in Lithopy:  *”Sunny days are made for transactions. No clouds prevent satellites from keeping an eye on contracts being made and assets changing hands. People exchange goods, make payments, marry and divorce. All the hustle and bustle of sunny days is recorded by the digital decentralised ledger of blockchain. Hugs are big and kisses are many to make sure satellites recognise and blockchain records affection, love and friendship. In Lithopy all social contact is a smart contract.“*
+
+The project comprises from several prototypes of smart contracts, documentation of their testing, and a design fiction move and installation:
+
+ - multi-screen installation and movie
+ - BNA (business networ) definition and several transactions (smart contracts) deployed on Hyperledger Fabric  as an art/design fiction
+ - Node RED dashboard enabling interaction with the smart contracts and other services in Lithopia 
+
 ## Lithopia Dashboard in Node-RED
 This is a design fiction dashboard for Lithopians used to follow satellites (and drones) in order to transact over Hyperledger Composer/Fabric based smart contracts, to follow the LiCoin cryptocurrency and its relations to the Lithium sentiments and markets. 
 In the [LithopiaNodeRed.json](https://github.com/anonette/lithopia/blob/master/LithopiaNodeRed.json) file there are **three columns**:
@@ -22,6 +31,11 @@ We need just this part `payload.(name & ' owned by ' & owner)` to get `["Balcony
 **Sentiment analysis of Twitter feeds on Lithium and cryptocurrency exchange for Lithopians** 
  1. **Twitter sentiment analysis:** Combines examples from [Jelastic](https://jelastic.com/blog/node-red-cloud-hosting-for-tweeter-feed-analysis/) and [IBM](https://www.ibm.com/blogs/bluemix/2015/11/analyze-tweets-in-30-minutes/). Excellent source is also [Luc Bors blog](http://lucbors.blogspot.com/2018/09/how-to-use-node-red-to-interact-with.html).  For the node-red-gauge UI telling when to buy or sell LiCoins based on the sentimens, courtesy of [Tim Minter](https://flows.nodered.org/flow/3fa024a69e24d94b4985934ce931aa7d)
  2. **Cryptocurrency charts**: Followed Node RED [ programming guide](http://noderedguide.com/cryptocurrencies-and-node-red/) on Binance node, needs improvement.
+
+## Hyperledger Composer BNA and transactions (JS) deployed on Fabric
+### BNA and JS files
+
+### Deployment of Fabirc
 #### After Restart
 ```
 cd ~/fabric-dev-servers
@@ -159,3 +173,6 @@ composer network install --card PeerAdmin@hlfv1 --archiveFile ~/fabric-dev-serve
 * [upgrading-bna](https://hyperledger.github.io/composer/v0.19/business-network/upgrading-bna)
 * [development-tools](https://hyperledger.github.io/composer/latest/installing/development-tools.html)
 * [update-dev-en](https://hyperledger.github.io/composer/latest/installing/update-dev-env.html)
+
+
+**Lithopy:** concept Denisa Kera and Petr Šourek, director Petr Šourek, designer Eva Holá, photography Jan Hrdý, installation and 3D print Jaroslav Svítek, blockchain and Node RED development Denisa Kera and Yair Reshef, satellite image processing Mateusz Kraiński, and team, text   Denisa Kera, Iva Knobloch, Petr Šourek.
