@@ -13,14 +13,14 @@ https://console.bluemix.net/docs/services/IoT/GA_information_management/mapping_
 To test also http://try.jsonata.org/. Useful resource to learn how to work with SWITCH  - courtesy [Steve Cope from min 10.](https://www.youtube.com/watch?v=PbEoHxFOdmE&fbclid=IwAR2rvMT7lKdwk8LwGtcBF7V29AhJ-GAr07tJrVVXCyeA-ZFwSb6hy_akhzo)
 ### Transactions
 **Info on the Sentinel2A satellite position, view on Earth from ISS, forms to blockchain transactions on how to become Lithopian, register a property or parnership**
- 5. **Tracking satellites on a map:** important to get the TLE data for the satellite nodes from  [https://www.celestrak.com/NORAD/elements/supplemental/](https://www.celestrak.com/NORAD/elements/supplemental/)
+ 1. **Tracking satellites on a map:** important to get the TLE data for the satellite nodes from  [https://www.celestrak.com/NORAD/elements/supplemental/](https://www.celestrak.com/NORAD/elements/supplemental/)
 then use instructions from [node-red-satellites node](https://flows.nodered.org/node/node-red-contrib-satellites) and [world-map-node](https://flows.nodered.org/node/node-red-contrib-web-worldmap).
- 6. **ISS real time video of Earth**:  just video embedded in node-red templat.
- 7. **Hyperleder Composer REST API post commands**: allowing participants to register on the blockchain their names, property and type of partnerships.
- ### **Markets**
- 8. Twitter sentiments
- 9. Cryptocurrency exchange rates
-
+ 2. **ISS real time video of Earth**:  just video embedded in node-red templat.
+ 3. **Hyperleder Composer REST API post commands**: allowing participants to register on the blockchain their names, property and type of partnerships.
+ ### Markets
+**Sentiment analysis of Twitter feeds on Lithium and cryptocurrency exchange for Lithopians** 
+ 1. **Twitter sentiment analysis:** Combines examples from [Jelastic](https://jelastic.com/blog/node-red-cloud-hosting-for-tweeter-feed-analysis/) and [IBM](https://www.ibm.com/blogs/bluemix/2015/11/analyze-tweets-in-30-minutes/). Excellent source is also [Luc Bors blog](http://lucbors.blogspot.com/2018/09/how-to-use-node-red-to-interact-with.html).  For the node-red-gauge UI telling when to buy or sell LiCoins based on the sentimens, courtesy of [Tim Minter](https://flows.nodered.org/flow/3fa024a69e24d94b4985934ce931aa7d)
+ 2. **Cryptocurrency charts**: Followed Node RED [ programming guide](http://noderedguide.com/cryptocurrencies-and-node-red/) on Binance node, needs improvement.
 #### After Restart
 ```
 cd ~/fabric-dev-servers
