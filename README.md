@@ -16,14 +16,12 @@ This is a design fiction dashboard for Lithopians used to follow satellites (and
 In the [LithopiaNodeRed.json](https://github.com/anonette/lithopia/blob/master/LithopiaNodeRed.json) file there are **three columns**:
 ### Basic info
 **Basic info on Lithopia, Lithopians, their properties, marriages and partnerships**
- 1. **Retro LCD display:** courtesy of Peter Scargill https://tech.scargill.net/lcd-display-for-node-red/
- 2. **Openweather widget**: courtesy of FRED http://developers.sensetecnic.com/article/a-node-red-flow-to-monitor-the-weather/ to which I added text-to-speech node for weather announcement.
- 3. **Openweather icon**: generating and showing html objects IMG based on 
-https://flows.nodered.org/flow/2f1aaf0635f9bf23207152682323240a 
-Trick is to createthe payload with the tags  in a  function-node and then in the template-node just represent it with `<div ng-bind-html="msg.payload"></div>`
- 4. **Texfields on Lithopians, property, marriages Hyperlegder GET commands**: all use http-node with get command to query the REST-API composer contract on http://anonette.net:3000/explorer and with switch-node and JSONATA get the requesteddata out of the  complex JSON, basic JSONARA https://docs.jsonata.org/string-functions.html
-https://console.bluemix.net/docs/services/IoT/GA_information_management/mapping_expression_language.html#mapping_expression 
-To test also http://try.jsonata.org/. Useful resource to learn how to work with SWITCH  - courtesy [Steve Cope from min 10.](https://youtu.be/PbEoHxFOdmE?t=600)
+ 1. **Retro LCD display:** courtesy of Peter Scargill ([link](https://tech.scargill.net/lcd-display-for-node-red/))
+ 2. **Openweather widget**: courtesy of FRED ([link](http://developers.sensetecnic.com/article/a-node-red-flow-to-monitor-the-weather/)). to which I added text-to-speech node for weather announcement.
+ 3. **Openweather icon**: generating and showing html objects IMG based on this [flow](https://flows.nodered.org/flow/2f1aaf0635f9bf23207152682323240a). Trick is to create the payload with the tags in a  function-node and then in the template-node just represent it with `<div ng-bind-html="msg.payload"></div>`
+ 4. **Texfields on Lithopians, property, marriages Hyperlegder GET commands**: see http://anonette.net:3000/explorer . all use http-node with get command to query the REST-API composer contract with switch-node and [JSONATA](https://docs.jsonata.org/). get the requested data out of the  complex JSON, see basic [string functions](https://docs.jsonata.org/string-functions.html) and handeling of [expressions](https://console.bluemix.net/docs/services/IoT/GA_information_management/mapping_expression_language.html#mapping_expression ) in JSONATA.
+ 
+To test also http://try.jsonata.org/. [Useful resource](https://youtu.be/PbEoHxFOdmE?t=600) to learn how to work with SWITCH  - courtesy Steve Cope 
 
 ### Transactions
 **Info on the Sentinel2A satellite position, view on Earth from ISS, forms to blockchain transactions on how to become Lithopian, register a property or parnership**
