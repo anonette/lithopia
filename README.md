@@ -1,6 +1,9 @@
 # LITHOPIA/LITHOPY project
-Design fiction prototype using Hyperldger Composer and Fabric to build a blockchain solution and smart contracts for a fictional village called Lithopia in Czech republic.  The project is inspired by stories from the Cinovec region of a facades of family houses covered in lithium powder. In the 1980s, the former miners had regarded lithium’s glittering powder as junk material freely available for the exterior decoration of houses. 
-During 2017 elections the Czech Republic went through a Lithium craze without having ever mined a single grain of lithium ore. The winning party scored extra 10 percent points for promising a lithium paradise for all. As response to the populist promise and the ongoing speculation in Lithium, the Lithopy team created its own fairy-tale scenario. In Lithopy, all sorts of promises and three sorts of mining come together: mineral extraction, big data mining and blockchain mining. The multiscreen movie tahta accompanies the prototypes  advertises a Sunny Day in Lithopy:  *”Sunny days are made for transactions. No clouds prevent satellites from keeping an eye on contracts being made and assets changing hands. People exchange goods, make payments, marry and divorce. All the hustle and bustle of sunny days is recorded by the digital decentralised ledger of blockchain. Hugs are big and kisses are many to make sure satellites recognise and blockchain records affection, love and friendship. In Lithopy all social contact is a smart contract.“*
+Design fiction prototype using Hyperldger Composer and Fabric to build a blockchain solution and smart contracts for a fictional village called Lithopia in Czech republic.  The project is inspired by stories from the Cinovec region of a facades of family houses covered in lithium powder. In the 1980s, the former miners had regarded lithium’s glittering powder as junk material freely available for the exterior decoration of houses.  
+
+During 2017 elections the Czech Republic went through a Lithium craze without having ever mined a single grain of lithium ore. The winning party scored extra 10 percent points for promising a lithium paradise for all. As response to the populist promise and the ongoing speculation in Lithium, the Lithopy team created its own fairy-tale scenario. In Lithopy, all sorts of promises and three sorts of mining come together: mineral extraction, big data mining and blockchain mining.  
+The multiscreen movie tahta accompanies the prototypes  advertises a Sunny Day in Lithopy:  
+*”Sunny days are made for transactions. No clouds prevent satellites from keeping an eye on contracts being made and assets changing hands. People exchange goods, make payments, marry and divorce. All the hustle and bustle of sunny days is recorded by the digital decentralised ledger of blockchain. Hugs are big and kisses are many to make sure satellites recognise and blockchain records affection, love and friendship. In Lithopy all social contact is a smart contract.“*
 
 The project comprises from several prototypes of smart contracts, documentation of their testing, and a design fiction move and installation:
 
@@ -20,17 +23,24 @@ https://flows.nodered.org/flow/2f1aaf0635f9bf23207152682323240a
 Trick is to createthe payload with the tags  in a  function-node and then in the template-node just represent it with `<div ng-bind-html="msg.payload"></div>`
  4. **Texfields on Lithopians, property, marriages Hyperlegder GET commands**: all use http-node with get command to query the REST-API composer contract on http://anonette.net:3000/explorer and with switch-node and JSONATA get the requesteddata out of the  complex JSON, basic JSONARA https://docs.jsonata.org/string-functions.html
 https://console.bluemix.net/docs/services/IoT/GA_information_management/mapping_expression_language.html#mapping_expression 
-To test also http://try.jsonata.org/. Useful resource to learn how to work with SWITCH  - courtesy [Steve Cope from min 10.](https://www.youtube.com/watch?v=PbEoHxFOdmE&fbclid=IwAR2rvMT7lKdwk8LwGtcBF7V29AhJ-GAr07tJrVVXCyeA-ZFwSb6hy_akhzo)
+To test also http://try.jsonata.org/. Useful resource to learn how to work with SWITCH  - courtesy [Steve Cope from min 10.](https://youtu.be/PbEoHxFOdmE?t=600)
+
 ### Transactions
 **Info on the Sentinel2A satellite position, view on Earth from ISS, forms to blockchain transactions on how to become Lithopian, register a property or parnership**
  1. **Tracking satellites on a map:** important to get the TLE data for the satellite nodes from  [https://www.celestrak.com/NORAD/elements/supplemental/](https://www.celestrak.com/NORAD/elements/supplemental/)
 then use instructions from [node-red-satellites node](https://flows.nodered.org/node/node-red-contrib-satellites) and [world-map-node](https://flows.nodered.org/node/node-red-contrib-web-worldmap).
+
  2. **ISS real time video of Earth**:  just video embedded in node-red templat.
+ 
  3. **Hyperleder Composer REST API POST commands**: allowing participants to register on the blockchain their names, property and type of partnerships. The challenging part here was to figure out how to extract values from the JSON object created by the hyperldger REST API in Basic info part,  here is the example of such object: `[{"$class":"org.lithopia.basic.LithopiaPlace","name":"Balcony","flagColors":[],"requestSources":[],"datasetIds":[],"owner":"Yair"},{"$class":"org.lithopia.basic.LithopiaPlace","name":"Balcony2","flagColors":[],"requestSources":[],"datasetIds":[],"owner":"Yair"}]`
+ 
 We need just this part `payload.(name & ' owned by ' & owner)` to get `["Balcony owned by Yair","Balcony2 owned by Yair"]`that appears in the text-node (after csv-node).
+
  ### Markets
 **Sentiment analysis of Twitter feeds on Lithium and cryptocurrency exchange for Lithopians** 
+
  1. **Twitter sentiment analysis:** Combines examples from [Jelastic](https://jelastic.com/blog/node-red-cloud-hosting-for-tweeter-feed-analysis/) and [IBM](https://www.ibm.com/blogs/bluemix/2015/11/analyze-tweets-in-30-minutes/). Excellent source is also [Luc Bors blog](http://lucbors.blogspot.com/2018/09/how-to-use-node-red-to-interact-with.html).  For the node-red-gauge UI telling when to buy or sell LiCoins based on the sentimens, courtesy of [Tim Minter](https://flows.nodered.org/flow/3fa024a69e24d94b4985934ce931aa7d)
+ 
  2. **Cryptocurrency charts**: Followed Node RED [ programming guide](http://noderedguide.com/cryptocurrencies-and-node-red/) on Binance node, needs improvement.
 
 ## Hyperledger Composer BNA and transactions (JS) deployed on Fabric
@@ -38,7 +48,7 @@ We need just this part `payload.(name & ' owned by ' & owner)` to get `["Balcony
 Lithopia "business network" comprises from lithopians and their assets (properties, partnerships, LiCoins)  transacted based on data from drones and satellites that are triggered by gestures Christo style coverings of places and large objects (LiCoin Yap). 
 Possible transactions: change ownership of property, become part of a parnership or marriage (that can involve more parties) for a defined period of time (inspired by [SmartVows project](https://smartvows.com/) ).
 **CTO file defining the network:**
-
+```
     /* global getParticipantRegistry getAssetRegistry getFactory */
 
 /**
@@ -416,7 +426,7 @@ const  participantRegistry  =  await  getParticipantRegistry('org.lithopia.basic
 await  participantRegistry.update(partner);
 
 }
-
+```
 
 ### Deployment of Fabirc
 #### After Restart
