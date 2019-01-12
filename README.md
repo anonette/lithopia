@@ -8,7 +8,7 @@ In the [LithopiaNodeRed.json](https://github.com/anonette/lithopia/blob/master/L
  3. **Openweather icon**: generating and showing html objects IMG based on 
 https://flows.nodered.org/flow/2f1aaf0635f9bf23207152682323240a 
 Trick is to createthe payload with the tags  in a  function-node and then in the template-node just represent it with `<div ng-bind-html="msg.payload"></div>`
- 4. **Texfields on Lithopians, property, marriages**: all use http-node with get command to query the REST-API composer contract on http://anonette.net:3000/explorer and with switch-node and JSONATA get the requesteddata out of the  complex JSON, basic JSONARA https://docs.jsonata.org/string-functions.html
+ 4. **Texfields on Lithopians, property, marriages Hyperlegder GET commands**: all use http-node with get command to query the REST-API composer contract on http://anonette.net:3000/explorer and with switch-node and JSONATA get the requesteddata out of the  complex JSON, basic JSONARA https://docs.jsonata.org/string-functions.html
 https://console.bluemix.net/docs/services/IoT/GA_information_management/mapping_expression_language.html#mapping_expression 
 To test also http://try.jsonata.org/. Useful resource to learn how to work with SWITCH  - courtesy [Steve Cope from min 10.](https://www.youtube.com/watch?v=PbEoHxFOdmE&fbclid=IwAR2rvMT7lKdwk8LwGtcBF7V29AhJ-GAr07tJrVVXCyeA-ZFwSb6hy_akhzo)
 ### Transactions
@@ -16,7 +16,8 @@ To test also http://try.jsonata.org/. Useful resource to learn how to work with 
  1. **Tracking satellites on a map:** important to get the TLE data for the satellite nodes from  [https://www.celestrak.com/NORAD/elements/supplemental/](https://www.celestrak.com/NORAD/elements/supplemental/)
 then use instructions from [node-red-satellites node](https://flows.nodered.org/node/node-red-contrib-satellites) and [world-map-node](https://flows.nodered.org/node/node-red-contrib-web-worldmap).
  2. **ISS real time video of Earth**:  just video embedded in node-red templat.
- 3. **Hyperleder Composer REST API post commands**: allowing participants to register on the blockchain their names, property and type of partnerships.
+ 3. **Hyperleder Composer REST API POST commands**: allowing participants to register on the blockchain their names, property and type of partnerships. The challenging part here was to figure out how to extract values from the JSON object created by the hyperldger REST API in Basic info part,  here is the example of such object: `[{"$class":"org.lithopia.basic.LithopiaPlace","name":"Balcony","flagColors":[],"requestSources":[],"datasetIds":[],"owner":"Yair"},{"$class":"org.lithopia.basic.LithopiaPlace","name":"Balcony2","flagColors":[],"requestSources":[],"datasetIds":[],"owner":"Yair"}]`
+We need just this part `payload.(name & ' owned by ' & owner)` to get `["Balcony owned by Yair","Balcony2 owned by Yair"]`that appears in the text-node (after csv-node).
  ### Markets
 **Sentiment analysis of Twitter feeds on Lithium and cryptocurrency exchange for Lithopians** 
  1. **Twitter sentiment analysis:** Combines examples from [Jelastic](https://jelastic.com/blog/node-red-cloud-hosting-for-tweeter-feed-analysis/) and [IBM](https://www.ibm.com/blogs/bluemix/2015/11/analyze-tweets-in-30-minutes/). Excellent source is also [Luc Bors blog](http://lucbors.blogspot.com/2018/09/how-to-use-node-red-to-interact-with.html).  For the node-red-gauge UI telling when to buy or sell LiCoins based on the sentimens, courtesy of [Tim Minter](https://flows.nodered.org/flow/3fa024a69e24d94b4985934ce931aa7d)
