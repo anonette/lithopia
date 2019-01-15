@@ -3,7 +3,8 @@
 1. [ Description. ](#desc)
 2. [ Prototypes. ](#usage)
 3. [ Dashboard. ](#dash)
-3. [ Blockchain contracts. ](#hype)
+4. [ Blockchain contracts. ](#hype)
+5. [ Credits. ](#credit)
 
 
 <a name="desc"></a>
@@ -383,5 +384,6 @@ composer network install --card PeerAdmin@hlfv1 --archiveFile ~/fabric-dev-serve
 * [development-tools](https://hyperledger.github.io/composer/latest/installing/development-tools.html)
 * [update-dev-en](https://hyperledger.github.io/composer/latest/installing/update-dev-env.html)
 
-
+<a name="credit"></a>
+## Credits
 **Lithopy:** concept Denisa Kera and Petr Šourek, director Petr Šourek, designer Eva Holá, photography Jan Hrdý, installation and 3D print Jaroslav Svítek, blockchain and Node RED development Denisa Kera and Yair Reshef, satellite image processing Mateusz Kraiński, and team, text   Denisa Kera, Iva Knobloch, Petr Šourek.
