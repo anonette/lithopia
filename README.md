@@ -1,11 +1,13 @@
 # LITHOPIA/LITHOPY project
 
 1. [ Description. ](#desc)
-2. [ Usage tips. ](#usage)
+2. [ Prototypes. ](#usage)
+3. [ Dashboard. ](#dash)
+3. [ Blockchain contracts. ](#hype)
 
 
 <a name="desc"></a>
-## Descriptin
+## Description
 This design fiction uses Hyperldger Composer and Fabric to deploy several smart contracts for a fictional village called Lithopia in the Czech Republic and explore **extreme scenarios of future data and blockchain governance with unintended forms of resistance**. The villagers in this fictional place use satellite and drone data to govern their affairs on the Hyperledger blockchain in a very transparent, aesthetic and public manner. They literally live their lives in front of the all-seeing technical “eyes” of God and Providence, such as Sentinel 2A and B Copernicus satellites or the public drones used as notaries. **Special long gestures, movements of large LiCoins,  but also acts of covering spaces in a Christo style manner at a defined time, all trigger transactions on the Hyperledger blockchain** operated over a specially designed Node RED dashboard.  
 This aesthetic and at times ironic, data transparent living is **inspired by stories from the mining region of Cinovec** about facades of family houses covered in lithium powder. In the 1980s, the former miners had regarded lithium’s glittering powder as junk material freely available for the exterior decoration of houses. During the 2017 Czech Republic elections, a Lithium craze unleashed, and the winning party scored extra 10 percentage for promising a lithium paradise for all without having ever mined a single grain of lithium ore. The semi-legal facades of the miners family houses suddenly became an unlikely winner, but also forms of resistance in the speculative lithium wars between the different political fractions and corrupt business interests.   
 As a response to these **populist promises and the ongoing speculation in Lithium, but also similar political projects, such as the calls for national blockchain cryptocurrency**, the Lithopy team decided to offer a model for extreme adoption of emergent technologies to the villagers. The hope is that early and extreme adoption of emergent technologies can reproduce the “facade” effect and hack and offer some unintended forms of resistance to the speculative and extractive powers to be. **In Lithopy, all sorts of promises and three sorts of mining come together: mineral extraction, big data mining and blockchain mining** to explore the unintended consequences, but also forms of resistance in such futures. The multiscreen movie that accompanies the blockchcain and Node RED prototypes advertises a Sunny Day in Lithopy: `”Sunny days are made for transactions. No clouds prevent satellites from keeping an eye on contracts being made and assets changing hands. People exchange goods, make payments, marry and divorce. All the hustle and bustle of sunny days is recorded by the digital decentralised ledger of blockchain. Hugs are big and kisses are many to make sure satellites recognise and blockchain records affection, love and friendship. In Lithopy all social contact is a smart contract.“`  
@@ -15,7 +17,10 @@ The project comprises from **several prototypes of smart contracts, documentatio
  - BNA (business network definition) and several JS transactions (smart contracts) deployed on the Hyperledger Fabric as an art/design fiction
  - Node RED dashboard enabling interaction with the smart contracts and other services in Lithopia 
 
-## Lithopia Dashboard in Node-RED
+<a name="usage"></a>
+## Prototypes
+<a name="dash"></a>
+### Lithopia Dashboard in Node-RED
 This is a design fiction dashboard for Lithopians used to follow satellites (and drones) in order to transact over Hyperledger Composer/Fabric based smart contracts, to follow the LiCoin cryptocurrency and its relations to the Lithium sentiments and markets. 
 In the [LithopiaNodeRed.json](https://github.com/anonette/lithopia/blob/master/LithopiaNodeRed.json) file there are **three columns**:
 ### Basic info
@@ -49,6 +54,7 @@ We need just this part `payload.(name & ' owned by ' & owner)` to get `["Balcony
  
  2. **Cryptocurrency charts**: Followed Node RED [ programming guide](http://noderedguide.com/cryptocurrencies-and-node-red/) on Binance node, needs improvement.
 
+<a name="hype"></a>
 ## Hyperledger Composer BNA and transactions (JS) deployed on Fabric
 ### BNA and JS files
 Lithopia "business network" comprises from lithopians and their assets (properties, partnerships, LiCoins)  transacted based on data from drones and satellites that are triggered by gestures Christo style coverings of places and large objects (LiCoin Yap). 
