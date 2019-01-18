@@ -17,11 +17,11 @@ To respond to these **populist promises and  ongoing speculations in Lithium, bu
 ## Prototypes
 The project comprises from **several prototypes of smart contracts, documentation of their testing, and a design fiction movie and installation:**
 
- - multi-screen installation and movie
+ - Multi-screen installation and movie
  - BNA (business network definition) and several JS transactions (smart contracts) deployed on the Hyperledger Fabric as an art/design fiction
  - Node RED dashboard enabling interaction with the smart contracts and other services in Lithopia
- - proposal for a Lithopia blockchained streaming packets service (pay per packet), where IP packets that fragment the  188-byte streaming packets known as a Packetized Elementary Stream (PES) will be monetized. Lithopians measure their time in packets of data they stream from their blockchained paradise.  
- 
+  - a proposal for a Lithopia blockchained streaming packets service (pay per packet), where IP packets that fragment the  188-byte streaming packets known as a Packetized Elementary Stream (PES) will be monetized (and all other data in the future). Lithopians measure their time in packets of data to create a “blockchained” paradise. Moving and registering packets rather than data or content through the ledger fulfills an old dream or rather hope of a divine providence supervising and managing every occurrence and every creature. Blockchain technologies perform what continual Christianity and Judaism imagined as a continual creation, sometimes described as ( השגחה פרטית‬ Hashgochoh Protis), or what Descartes described in his “Meditation III” as a God that conserves the world by continuously creating it and Leibnizian imagines as a pre-established harmony . The design of a technology that streams packets on the blocks of a ledger is a form of an all-seeing, all present and perpetually creating God. The blockchain’s timestamps of all transactions and activities in the life of the Lithopians is a form of such divine providence and a ritual of protection.
+  
 <a name="dash"></a>
 ### Lithopia Dashboard in Node-RED
 This is a design fiction dashboard for Lithopians used to follow satellites (and drones) in order to transact over Hyperledger Composer/Fabric based smart contracts, to follow the LiCoin cryptocurrency and its relations to the Lithium sentiments and markets. 
