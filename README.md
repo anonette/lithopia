@@ -1,4 +1,5 @@
 # LITHOPIA/LITHOPY project
+[Lithopia image](https://drive.google.com/open?id=1uIGr5cnKOYGxdmtyQmUzHQB8zDFsNxdq)
 
 1. [ Description. ](#desc)
 2. [ Prototypes. ](#usage)
