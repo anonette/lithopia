@@ -37,10 +37,10 @@ The project comprises from **several prototypes of smart contracts, documentatio
   
 <a name="dash"></a>
 ## Lithopia Dashboard in Node-RED
+[Link](http://anonette.net:1780/ui/#/0)  
+![](http://gdurl.com/Gruk)  
 This is a design fiction dashboard for Lithopians used to follow satellites (and drones) in order to transact over Hyperledger Composer/Fabric based smart contracts, to follow the LiCoin cryptocurrency and its relations to the Lithium sentiments and markets. 
 In the [LithopiaNodeRed.json](https://github.com/anonette/lithopia/blob/master/LithopiaNodeRed.json) file there are **three columns**:
-
-![](http://gdurl.com/Gruk)  
 
 ### Basic info
 **Basic info on Lithopia, Lithopians, their properties, marriages and partnerships**
