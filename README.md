@@ -1,5 +1,5 @@
 # LITHOPIA/LITHOPY project
-![Lithopia image](https://doc-0c-bg-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/ia5l1qlbv8103ps65gp4r9lfent18trp/1548064800000/13629355680393231724/*/1EJ3ooXc-ZBzpwv0-ytiNsy-_ZOEUxagv=250x250)
+![Lithopia image](https://doc-0c-bg-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/ia5l1qlbv8103ps65gp4r9lfent18trp/1548064800000/13629355680393231724/*/1EJ3ooXc-ZBzpwv0-ytiNsy-_ZOEUxagv)
 
 1. [ Description. ](#desc)
 2. [ Prototypes. ](#usage)
