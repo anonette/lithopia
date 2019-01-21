@@ -3,8 +3,9 @@
 1. [ Description. ](#desc)
 2. [ Prototypes. ](#usage)
 3. [ Dashboard. ](#dash)
-4. [ Blockchain contracts. ](#hype)
-5. [ Credits. ](#credit)
+4. [ Satellite scanner. ](#scanner)
+5. [ Blockchain contracts. ](#hype)
+6. [ Credits. ](#credit)
 
 
 <a name="desc"></a>
@@ -30,7 +31,7 @@ The project comprises from **several prototypes of smart contracts, documentatio
  - Proposal for a Lithopia streaming packets service (pay per packet) on the blockchain, where IP packets of fragmented 188-byte streaming packets (Packetized Elementary Stream - PES) are monetized (just as all other data in the future). Lithopians measure their time in packets of data to create a “blockchain-ed” paradise. Packets on a ledger fulfill the **old dream of a divine providence supervising and managing every occurrence and every creature. Blockchain technologies perform what Christianity and Judaism imagined as a continual creation, sometimes described as ( השגחה פרטית‬ Hashgochoh Protis), what Descartes in his “Meditation III” describes as a God that conserves the world by continuously creating it, and what Leibnizian imagines as a pre-established harmony. To stream and timestamp packets on the ledger is to design an all-seeing, all present and perpetually creating God. The timestamps and blocks of all the transactions and activities in the life of the Lithopians is a form of divine providence, but also a magical ritual of protection via God’s eyes.
   
 <a name="dash"></a>
-### Lithopia Dashboard in Node-RED
+## Lithopia Dashboard in Node-RED
 This is a design fiction dashboard for Lithopians used to follow satellites (and drones) in order to transact over Hyperledger Composer/Fabric based smart contracts, to follow the LiCoin cryptocurrency and its relations to the Lithium sentiments and markets. 
 In the [LithopiaNodeRed.json](https://github.com/anonette/lithopia/blob/master/LithopiaNodeRed.json) file there are **three columns**:
 ### Basic info
@@ -63,6 +64,10 @@ We need just this part `payload.(name & ' owned by ' & owner)` to get `["Balcony
  1. **Twitter sentiment analysis:** Combines examples from [Jelastic](https://jelastic.com/blog/node-red-cloud-hosting-for-tweeter-feed-analysis/) and [IBM](https://www.ibm.com/blogs/bluemix/2015/11/analyze-tweets-in-30-minutes/). Excellent source is also [Luc Bors blog](http://lucbors.blogspot.com/2018/09/how-to-use-node-red-to-interact-with.html).  For the node-red-gauge UI telling when to buy or sell LiCoins based on the sentimens, courtesy of [Tim Minter](https://flows.nodered.org/flow/3fa024a69e24d94b4985934ce931aa7d)
  
  2. **Cryptocurrency charts**: Followed Node RED [ programming guide](http://noderedguide.com/cryptocurrencies-and-node-red/) on Binance node, needs improvement.
+
+<a name="scanner"></a>
+## Lithopia scanner 
+Application for the Lithopia project, which extracts latest Sentinel-2 image for a given area and analyses it for a presence of a visual marker. If such marker is detected, the application is triggerring a blockchain contract. [More](https://github.com/mt-krainski/lithopia_scanner)
 
 <a name="hype"></a>
 ## Hyperledger Composer BNA and transactions (JS) deployed on Fabric
