@@ -23,30 +23,25 @@ This aesthetic and at times ironic, blockchain and satellite "lithopia" is **ins
 
 To respond to the **populist promises and  ongoing speculations in Lithium, but also similar political projects, such as the calls for national blockchain cryptocurrency**, the Lithopy team continues in the work of these villagers and their lithium punk genre. We support early and extreme forms of adoption of emergent technologies that reproduce the “facade” effect or a hack and bring unintended forms of resistance as alternative to the speculative and extractive powers to be.  
 
-**In Lithopy, all sorts of promises and three sorts of mining come together: mineral extraction, big data mining and blockchain mining** to explore the Czech lithium punk fantasy. The ideal citizen of Lithopia follows in the steps of the good soldier Švejk and follows ad absurdum all emergent technological protocols to embrace all data structures and alghoritms.  The multiscreen movie that accompanies the blockchcain, LiCoins and Node RED prototypes advertises a Sunny Day in Lithopy: `”A Sunny Day in Lithopy
+**In Lithopy, all sorts of promises and three sorts of mining come together: mineral extraction, big data mining and blockchain mining** to explore the Czech lithium punk fantasy. The ideal citizen of Lithopia follows in the steps of the good soldier Švejk and follows ad absurdum all emergent technological protocols to embrace all data structures and alghoritms.  The multiscreen movie that accompanies the blockchcain, LiCoins and Node RED prototypes advertises a Sunny Day in Lithopy:  _”A Sunny Day in Lithopy _
 
 
-It is a sunny day in Lithopy, a quackerish-hackerish community given to transparency, justice & accountability.
+ _It is a sunny day in Lithopy, a quackerish-hackerish community given to transparency, justice & accountability. _
 
+ _In Lithopy, sunny days are made for transactions. No clouds prevent satellites from keeping an eye on you. Satellites track your every move. A decentralized, distributed and public digital ledger of blockchain records every transaction. _
 
-In Lithopy, sunny days are made for transactions. No clouds prevent satellites from keeping an eye on you. Satellites track your every move. A decentralized, distributed and public digital ledger of blockchain records every transaction.
+ _On sunny days, contracts are made. Assets change hands. People make payments and friends, marry and divorce. _
 
+ _Lithopians use coins big enough to catch the eye of a satellite. They shake hands for minutes. When you travel to Lithopy on a sunny day, you never pull your hand back before a Lithopian unless you are less serious about business. _
 
-On sunny days, contracts are made. Assets change hands. People make payments and friends, marry and divorce.
+ _In Lithopy, hugs are big and kisses are many to make sure satellites recognize and the blockchain records their affection, love & friendship. _
 
+ _There is no excess, no frivolity in their actions. Their all-or-nothing gestures, their fits of laughter, their floods of tears are in fact all well measured. _
 
-Lithopians use coins big enough to catch the eye of a satellite. They shake hands for minutes. When you travel to Lithopy on a sunny day, you never pull your hand back before a Lithopian unless you are less serious about business.
+ _You may notice the furtive looks they cast toward the sky. Whatever Lithopians do on sunny days,
+they do before the face of satellites. _
 
-
-In Lithopy, hugs are big and kisses are many to make sure satellites recognize and the blockchain records their affection, love & friendship.
-
-
-There is no excess, no frivolity in their actions. Their all-or-nothing gestures, their fits of laughter, their floods of tears are in fact all well measured.
-
-You may notice the furtive looks they cast toward the sky. Whatever Lithopians do on sunny days,
-they do before the face of satellites.
-
-In Lithopy, all social contact is a smart contract.“`  
+ _In Lithopy, all social contact is a smart contract.“`  _ 
 
 <a name="usage"></a>
 ## Prototypes
