@@ -21,9 +21,26 @@ Lithopia has a **sister city on the Micronesian island of Yap** that uses simila
 
 This aesthetic and at times ironic, blockchain and satellite "lithopia" is **inspired by stories from the mining region of Cinovec** about facades of family houses covered in lithium powder. In the 1980s, the former miners had regarded lithium’s glittering powder as a junk material freely available for the exterior decoration of houses. During the 2017 Czech Republic elections, a Lithium craze unleashed, and the winning party scored extra 10 percentage for promising a lithium paradise for all without ever mining even a single grain of lithium ore. The semi-legal facades of the miners family houses suddenly became an unlikely form of fortune, an unintended form of resistance in the speculative lithium wars between the political fractions and corrupt business interests. We intepret this as a start of the **Czech lithium punk genre** and a model of management of resources and emergent technologies.    
 
-To respond to the **populist promises and  ongoing speculations in Lithium, but also similar political projects, such as the calls for national blockchain cryptocurrency**, the Lithopy team continues in the work of these villagers that invented the lithium punk genre. We belive in such extreme forms of adoption of emergent technologies in small communities that cau se our blockchain design. The  early and extreme adoptions of emergent technologies can reproduce the “facade” effect or a hack and explore some unintended forms of resistance to the speculative and extractive powers to be.  
+To respond to the **populist promises and  ongoing speculations in Lithium, but also similar political projects, such as the calls for national blockchain cryptocurrency**, the Lithopy team continues in the work of these villagers and their lithium punk genre. We support early and extreme forms of adoption of emergent technologies that reproduce the “facade” effect or a hack and bring unintended forms of resistance as alternative to the speculative and extractive powers to be.  
 
-**In Lithopy, all sorts of promises and three sorts of mining come together: mineral extraction, big data mining and blockchain mining** to explore the Czech lithium punk fantasy. The ideal citizen of Lithopia follows in the steps of the good soldier Švejk and follows ad absurdum all emergent technological protocols to embrace all data structures and alghoritms.  The multiscreen movie that accompanies the blockchcain, LiCoins and Node RED prototypes advertises a Sunny Day in Lithopy: `”Sunny days are made for transactions. No clouds prevent satellites from keeping an eye on contracts being made and assets changing hands. People exchange goods, make payments, marry and divorce. All the hustle and bustle of sunny days is recorded by the digital decentralised ledger of blockchain. Hugs are big and kisses are many to make sure satellites recognise and blockchain records affection, love and friendship. In Lithopy all social contact is a smart contract.“`  
+**In Lithopy, all sorts of promises and three sorts of mining come together: mineral extraction, big data mining and blockchain mining** to explore the Czech lithium punk fantasy. The ideal citizen of Lithopia follows in the steps of the good soldier Švejk and follows ad absurdum all emergent technological protocols to embrace all data structures and alghoritms.  The multiscreen movie that accompanies the blockchcain, LiCoins and Node RED prototypes advertises a Sunny Day in Lithopy: `”A Sunny Day in Lithopy
+<br />
+It is a sunny day in Lithopy, a quackerish-hackerish community given to transparency, justice & accountability.
+<br />
+In Lithopy, sunny days are made for transactions. No clouds prevent satellites from keeping an eye on you. Satellites track your every move. A decentralized, distributed and public digital ledger of blockchain records every transaction. 
+<br />
+On sunny days, contracts are made. Assets change hands. People make payments and friends, marry and divorce.
+<br />
+Lithopians use coins big enough to catch the eye of a satellite. They shake hands for minutes. When you travel to Lithopy on a sunny day, you never pull your hand back before a Lithopian unless you are less serious about business.
+<br />
+In Lithopy, hugs are big and kisses are many to make sure satellites recognize and the blockchain records their affection, love & friendship. 
+<br />
+There is no excess, no frivolity in their actions. Their all-or-nothing gestures, their fits of laughter, their floods of tears are in fact all well measured.
+<br />
+You may notice the furtive looks they cast toward the sky. Whatever Lithopians do on sunny days,
+they do before the face of satellites.
+<br />
+In Lithopy, all social contact is a smart contract.“`  
 
 <a name="usage"></a>
 ## Prototypes
