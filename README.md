@@ -40,33 +40,40 @@ The project comprises from **several prototypes of smart contracts, documentatio
 [Link](http://anonette.net:1780/ui/#/0)  
 ![](http://gdurl.com/Gruk)  
 This is a design fiction dashboard for Lithopians used to follow satellites (and drones) in order to transact over Hyperledger Composer/Fabric based smart contracts, to follow the LiCoin cryptocurrency and its relations to the Lithium sentiments and markets. 
-In the [LithopiaNodeRed.json](https://github.com/anonette/lithopia/blob/master/LithopiaNodeRed.json) file there are **three columns**:
+In the [lithopiaFeb22.json](https://github.com/anonette/lithopia/blob/master/lithopiaFeb22.json) file there are **three columns**:
 
-### Basic info
-**Basic info on Lithopia, Lithopians, their properties, marriages and partnerships**
+### DATE, TIME & WEATHER
+**Basic info on Lithopia**
 1. **Retro LCD display:** courtesy of Peter Scargill ([link](https://tech.scargill.net/lcd-display-for-node-red/))
 2. **Openweather widget**: courtesy of FRED ([link](http://developers.sensetecnic.com/article/a-node-red-flow-to-monitor-the-weather/)). 
-   - to which I added text-to-speech node for weather announcement.
+   - to which I added text-to-speech node for weather announcement (disabled for the installation, present in JSON).
 3. **Openweather icon**: generating and showing html objects IMG based on this [flow](https://flows.nodered.org/flow/2f1aaf0635f9bf23207152682323240a). 
    - Trick is to create the payload with the tags in a  function-node and then in the template-node just represent it with `<div ng-bind-html="msg.payload"></div>`
-4. **Texfields on Lithopians, property, marriages Hyperlegder GET commands**: see http://anonette.net:3000/explorer   
+3. **Lithopia**: how to trigger various blockchain transactions and future plans.
+
+### WHO'S WHO
+**Basic info on Lithopians, their properties, marriages and partnerships**
+1. **Texfields on Lithopians, property, marriages Hyperlegder GET commands**: see http://anonette.net:3000/explorer   
    - we use http-node with get command to query the REST-API composer contract with switch-node and [JSONATA](https://docs.jsonata.org/).  
    - to get the requested data out of complex JSON, see [string functions](https://docs.jsonata.org/string-functions.html) and handeling of [expressions](https://console.bluemix.net/docs/services/IoT/GA_information_management/mapping_expression_language.html#mapping_expression ).  
    - To test also try the [online parser](http://try.jsonata.org/). 
    - another [Useful resource](https://youtu.be/PbEoHxFOdmE?t=600) to learn how to work with SWITCH  - courtesy Steve Cope 
 
-### Transactions
+### BLOCKCHAIN TRANSACTIONS 
 **Info on the Sentinel2A satellite position, view on Earth from ISS, forms to blockchain transactions on how to become Lithopian, register a property or parnership**
  1. **Tracking satellites on a map:** important to get the TLE data for the satellite nodes from  [https://www.celestrak.com/NORAD/elements/supplemental/](https://www.celestrak.com/NORAD/elements/supplemental/)
 then use instructions from [node-red-satellites node](https://flows.nodered.org/node/node-red-contrib-satellites) and [world-map-node](https://flows.nodered.org/node/node-red-contrib-web-worldmap).
 
- 2. **ISS real time video of Earth**:  just video embedded in node-red templat.
+ 2. **ISS real time video of Earth**:  just video embedded in node-red templat (disabled for the installation, but present in the JSON).
  
  3. **Hyperleder Composer REST API POST commands**: allowing participants to register on the blockchain their names, property and type of partnerships. The challenging part here was to figure out how to extract values from the JSON object created by the hyperldger REST API in Basic info part,  here is the example of such object: `[{"$class":"org.lithopia.basic.LithopiaPlace","name":"Balcony","flagColors":[],"requestSources":[],"datasetIds":[],"owner":"Yair"},{"$class":"org.lithopia.basic.LithopiaPlace","name":"Balcony2","flagColors":[],"requestSources":[],"datasetIds":[],"owner":"Yair"}]`
  
 We need just this part `payload.(name & ' owned by ' & owner)` to get `["Balcony owned by Yair","Balcony2 owned by Yair"]`that appears in the text-node (after csv-node).
 
- ### Markets
+4.**Credits, Lithopia team**:
+First inhabitants ;-)
+
+ ### MARKETS & SENTIMENTS
 **Sentiment analysis of Twitter feeds on Lithium and cryptocurrency exchange for Lithopians** 
 
  1. **Twitter sentiment analysis:** Combines examples from [Jelastic](https://jelastic.com/blog/node-red-cloud-hosting-for-tweeter-feed-analysis/) and [IBM](https://www.ibm.com/blogs/bluemix/2015/11/analyze-tweets-in-30-minutes/). Excellent source is also [Luc Bors blog](http://lucbors.blogspot.com/2018/09/how-to-use-node-red-to-interact-with.html).  For the node-red-gauge UI telling when to buy or sell LiCoins based on the sentimens, courtesy of [Tim Minter](https://flows.nodered.org/flow/3fa024a69e24d94b4985934ce931aa7d)
