@@ -408,7 +408,8 @@ composer network install --card PeerAdmin@hlfv1 --archiveFile ~/fabric-dev-serve
 
 <a name="credit"></a>
 ## Credits
-**Lithopy:** concept: Denisa Kera and Petr Šourek<br />
+**Lithopy:** <br />
+concept: Denisa Kera and Petr Šourek<br />
 director: Petr Šourek<br />
 designer: Eva Holá<br />
 photography: Jan Hrdý<br />
