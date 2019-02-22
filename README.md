@@ -417,10 +417,16 @@ composer network install --card PeerAdmin@hlfv1 --archiveFile ~/fabric-dev-serve
 ## Credits
 **Lithopy:** <br />
 concept: Denisa Kera and Petr Šourek<br />
-director: Petr Šourek<br />
+script: Petr Šourek<br />
 designer: Eva Holá<br />
-photography: Jan Hrdý<br />
+director of photography: Jan Hrdý, Michal Krásl<br />
+editor: Milan Holman<br />
 installation and 3D print: Virtuoso by Swetja<br />
 blockchain and Node RED: Denisa Kera and Yair Reshef<br />
 satellite image processing: Mateusz Kraiński<br />
-actors: Milan Holman, Michal Krásl, Ivan Zelenka, Libor Ščerba, Dan Dittrich, Eva Čechová, Dan Šváb, Barbara Humel, Justin Svoboda, Radim Klásek, Vojtěch Bárta, Roman Trochta, Zdeněk Žatečka, Olga Vincencová, Alice Šourková, Ivana Runštuková, Marie Johnson, Petra Brodská.<br />
+music: Swetja, Ivan Zelenka<br />
+sound: Libor Ščerba, Swetja<br />
+actors: Dan Dittrich, Eva Čechová, Dan Šváb, Barbara Humel, Justin Svoboda, Radim Klásek, Vojtěch Bárta, Zdeněk Žatečka, Olga Vincencová, Alice Šourková, Ivana Runštuková, Marie Johnson<br />
+technician: Roman Trochta<br />
+producer: Petra Brodská<br />
+director: Petr Šourek
