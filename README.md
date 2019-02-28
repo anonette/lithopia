@@ -438,7 +438,7 @@ concept: Denisa Kera and Petr Šourek<br />
 script: Petr Šourek<br />
 designer: Eva Holá<br />
 director of photography: Jan Hrdý, Michal Krásl<br />
-editor: Milan Holman<br />
+editor: Miloslav Holman<br />
 installation and 3D print: Virtuoso by Swetja<br />
 blockchain and Node RED: Denisa Kera and Yair Reshef<br />
 satellite image processing: Mateusz Kraiński<br />
