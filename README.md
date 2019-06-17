@@ -6,7 +6,8 @@
 3. [ Dashboard. ](#dash)
 4. [ Satellite scanner. ](#scanner)
 5. [ Blockchain contracts. ](#hype)
-6. [ Credits. ](#credit)
+5. [ Workshop. ](#workshop)
+7. [ Credits. ](#credit)
 
 
 <a name="desc"></a>
