@@ -49,12 +49,11 @@ The project comprises from **several prototypes of smart contracts, documentatio
 
  - Multi-screen installation and movie 
  - BNA (business network definition) and several JS transactions (smart contracts) deployed on the Hyperledger Fabric as an art/design fiction
- 
  [CTO model](https://github.com/anonette/lithopia/blob/master/org.lithopia.basic.cto)  
  [JS logic](https://github.com/anonette/lithopia/blob/master/logic.js)
  - Lithopia satellite scanner 
  - Node RED dashboard enabling interaction with the smart contracts and other services in Lithopia
- [Node RED JSON]( https://github.com/anonette/lithopia/blob/master/NodeREDMarch2019.json)
+ [Node RED JSON](https://github.com/anonette/lithopia/blob/master/NodeREDMarch2019.json)
  - Proposal for a Lithopia streaming packets service (pay per packet) on the blockchain, where IP packets of fragmented 188-byte streaming packets (Packetized Elementary Stream - PES) are monetized (just as all other data in the future). Lithopians measure their time in packets of data to create a “blockchain-ed” paradise. Packets on a ledger fulfill the **old dream of a divine providence supervising and managing every occurrence and every creature. Blockchain technologies perform what Christianity and Judaism imagined as a continual creation, sometimes described as ( השגחה פרטית‬ Hashgochoh Protis), what Descartes in his “Meditation III” describes as a God that conserves the world by continuously creating it, and what Leibnizian imagines as a pre-established harmony. To stream and timestamp packets on the ledger is to design an all-seeing, all present and perpetually creating God. The timestamps and blocks of all the transactions and activities in the life of the Lithopians is a form of divine providence, but also a magical ritual of protection via God’s eyes.
   
 <a name="dash"></a>
