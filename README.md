@@ -438,19 +438,25 @@ composer network install --card PeerAdmin@hlfv1 --archiveFile ~/fabric-dev-serve
 
 <a name="workshop"></a>
 ## Workshop
+
 While the first decade of distributed ledger technologies (DLTs) was mainly about transactions between individuals (Bitcoin and numerous crypto-alt-currency projects), we are entering a phase which expands transactions into contracts and involves new actors. The new generation of DLTs emphasize these interactions with corporate and institutional actors through self-executing “smart contracts” (Ethereum, Ripple and Corda platforms and protocols)  along “machine-to-machine” transactions involving IoTs using ledger technologies (IOTA) and soon probably AI. The increasing complexity of transactions and interactions over DLTs is leading to attempts to consolidate platforms (Enterprise Ethereum Alliance, Linux Hyperledger Fabric 1.0) and enable interoperability. The original, libertarian and crypto-anarchist emphasis on privacy and anonymity of the individuals and their transactions (as stated in the original white paper) is transforming into a pragmatic search for convergences of DLTs with existing social, but also technological infrastructures (IoTs, institutions, banks, supply chains).
+
 How to engage with the promises and threats of blockchain future infrastructure, algo and data governance?
+
 How to respond to the technological, ethical, social and legal opportunities and limits of the so-called smart contracts that automatize all decision making processes?
-What are the consequences of timestamping all our data to ensure the authenticity of media in an age of rampant simulations and fakes? 
+
+What are the consequences of timestamping all our data to ensure the authenticity of media in an age of rampant simulations and fakes
+
 How to combine existing institutions with this new infrastructure? 
+
 On which level to regulate these convergences?
 
-[How to run a workshop on stakeholder involvement in blockchain futures](https://docs.google.com/document/d/182Ecyipv7Aytc2i7a2DK1kxtNB3J_RsW3PkQfA7ez5c/edit#) - Summary of tools and activities for the workshop with methodological overview
-[Forms for the participants](https://docs.google.com/document/d/182Ecyipv7Aytc2i7a2DK1kxtNB3J_RsW3PkQfA7ez5c/edit#) - Modular forms used by participants/stakeholders in the workshop
-[Stakeholders cards used by the participants for the simulation game](https://docs.google.com/document/d/1vCqB2JdEchHp9ddEYwUvh3Z0dQdpHCF1YJC7t91zZLU/edit#) - give one to a group or an individual
-[Basic vocabulary of terms](https://docs.google.com/document/d/1yHcElO57kkqf6I6ATkSFkLfS7QQfCNO96BfpfFkp-iY/edit#) - give to participants 
-[Issue cards, summary of policy and technology issues](https://docs.google.com/document/d/1zrDojr8z9UzD0jYacMxvlZ4N_dijGdf8AlL3TwQ7MaE/edit#) - give the whole set to all participants to picka and choose or assign randomly 
-Examples of adverserial (evil)code to play with in the workshop: 
+* [How to run a workshop on stakeholder involvement in blockchain futures](https://docs.google.com/document/d/182Ecyipv7Aytc2i7a2DK1kxtNB3J_RsW3PkQfA7ez5c/edit#) - Summary of tools and activities for the workshop with methodological overview
+* [Forms for the participants](https://docs.google.com/document/d/182Ecyipv7Aytc2i7a2DK1kxtNB3J_RsW3PkQfA7ez5c/edit#) - Modular forms used by participants/stakeholders in the workshop
+* [Stakeholders cards used by the participants for the simulation game](https://docs.google.com/document/d/1vCqB2JdEchHp9ddEYwUvh3Z0dQdpHCF1YJC7t91zZLU/edit#) - give one to a group or an individual
+*  [Basic vocabulary of terms](https://docs.google.com/document/d/1yHcElO57kkqf6I6ATkSFkLfS7QQfCNO96BfpfFkp-iY/edit#) - give to participants 
+* [Issue cards, summary of policy and technology issues](https://docs.google.com/document/d/1zrDojr8z9UzD0jYacMxvlZ4N_dijGdf8AlL3TwQ7MaE/edit#) - give the whole set to all participants to picka and choose or assign randomly 
+* Examples of adverserial (evil)code to play with in the workshop: 
 [CTO model](https://github.com/anonette/lithopia/blob/master/LithopiaWorkshop.cto)  
 [JS logic](https://github.com/anonette/lithopia/blob/master/LithopiaWorkshop.js)
 
