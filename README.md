@@ -453,10 +453,11 @@ On which level to regulate these convergences?
 
 * [How to run a workshop on stakeholder involvement in blockchain futures](https://docs.google.com/document/d/182Ecyipv7Aytc2i7a2DK1kxtNB3J_RsW3PkQfA7ez5c/edit#) - Summary of tools and activities for the workshop with methodological overview
 * [Forms for the participants](https://docs.google.com/document/d/182Ecyipv7Aytc2i7a2DK1kxtNB3J_RsW3PkQfA7ez5c/edit#) - Modular forms used by participants/stakeholders in the workshop
-* [Stakeholders cards used by the participants for the simulation game](https://docs.google.com/document/d/1vCqB2JdEchHp9ddEYwUvh3Z0dQdpHCF1YJC7t91zZLU/edit#) - give one to a group or an individual
-*  [Basic vocabulary of terms](https://docs.google.com/document/d/1yHcElO57kkqf6I6ATkSFkLfS7QQfCNO96BfpfFkp-iY/edit#) - give to participants 
-* [Issue cards, summary of policy and technology issues](https://docs.google.com/document/d/1zrDojr8z9UzD0jYacMxvlZ4N_dijGdf8AlL3TwQ7MaE/edit#) - give the whole set to all participants to picka and choose or assign randomly 
+* [Stakeholders cards used by the participants for the simulation game](https://docs.google.com/document/d/1vCqB2JdEchHp9ddEYwUvh3Z0dQdpHCF1YJC7t91zZLU/edit#) -To give one to each group or to an individual (depending on the size of the workshop)
+*  [Basic vocabulary of terms](https://docs.google.com/document/d/1yHcElO57kkqf6I6ATkSFkLfS7QQfCNO96BfpfFkp-iY/edit#) - To give one copy to each participant 
+* [Issue cards, summary of policy and technology issues](https://docs.google.com/document/d/1zrDojr8z9UzD0jYacMxvlZ4N_dijGdf8AlL3TwQ7MaE/edit#) - To give the whole set to all participants so they pick and choose one issue (you can also assign the issues randomly) 
 * Examples of adverserial (evil)code to play with in the workshop: 
+
 [CTO model](https://github.com/anonette/lithopia/blob/master/LithopiaWorkshop.cto)  
 [JS logic](https://github.com/anonette/lithopia/blob/master/LithopiaWorkshop.js)
 
