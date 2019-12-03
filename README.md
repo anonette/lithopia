@@ -453,7 +453,7 @@ On which level to regulate these convergences?
 
 * [How to run a workshop on stakeholder involvement in blockchain futures](https://docs.google.com/document/d/182Ecyipv7Aytc2i7a2DK1kxtNB3J_RsW3PkQfA7ez5c/edit#) - Summary of tools and activities for the workshop with methodological overview
 * [Forms for the participants](https://docs.google.com/document/d/11mbW3AjeUv3XzmOXi-A6rmHq17ruip5Te2ZQ9WQ6rac/edit) - Modular forms used by participants/stakeholders in the workshop
-(https://docs.google.com/document/d/1zRIaxUZkdVLvwp5iwqMSl2d-QH_WZ-F6Hyhsd39CPA4/edit) - New form for a shorter workshop without stakeholder roles (recommended)
+[Form](https://docs.google.com/document/d/1zRIaxUZkdVLvwp5iwqMSl2d-QH_WZ-F6Hyhsd39CPA4/edit) - New form for a shorter workshop without stakeholder roles (recommended)
 * [Stakeholders cards used by the participants for the simulation game](https://docs.google.com/document/d/1vCqB2JdEchHp9ddEYwUvh3Z0dQdpHCF1YJC7t91zZLU/edit#) -To give one to each group or to an individual (depending on the size of the workshop)
 *  [Basic vocabulary of terms](https://docs.google.com/document/d/1yHcElO57kkqf6I6ATkSFkLfS7QQfCNO96BfpfFkp-iY/edit#) - To give one copy to each participant 
 * [Issue cards, summary of policy and technology issues](https://docs.google.com/document/d/1zrDojr8z9UzD0jYacMxvlZ4N_dijGdf8AlL3TwQ7MaE/edit#) - To give the whole set to all participants so they pick and choose one issue (you can also assign the issues randomly) 
