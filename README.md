@@ -321,6 +321,25 @@ pm2 start runRest.sh
 pm2 start node-red
 ```
 
+###errr
+if 
+```
+dk@anonette:~/fabric-dev-servers$ composer network list -c admin@lithopia
+✖ List business network from card admin@lithopia
+Error trying to ping. Error: 2 UNKNOWN: identity expired
+Error: Error trying to ping. Error: 2 UNKNOWN: identity expired
+Command failed
+```
+do
+```
+composer card delete
+composer card import --file networkadmin.card
+composer network ping --card admin@lithopia
+#then continue to test with 
+composer-rest-server -c admin@lithopia -n never -u true -w true
+#and deploy with
+pm2 start runRest
+```
 #### CLEAN
 (following official uninstall [guide](https://hyperledger.github.io/composer/latest/installing/uninstall-dev-env.html) )
   
@@ -462,6 +481,7 @@ On which level to regulate these convergences?
 
 [CTO model](https://github.com/anonette/lithopia/blob/master/LithopiaWorkshop.cto)  
 [JS logic](https://github.com/anonette/lithopia/blob/master/LithopiaWorkshop.js)
+
 
 <a name="credit"></a>
 ## Credits
