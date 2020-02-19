@@ -314,7 +314,8 @@ composer card list
 #to run in terminal
 composer-rest-server -c admin@lithopia -n never -u true -w true
 #or to run in background
-pm2 start runRest
+cd ~/  
+pm2 start runRest.sh  
 
 #run node-red
 pm2 start node-red
