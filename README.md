@@ -500,3 +500,5 @@ actors: Dan Dittrich, Eva Čechová, Dan Šváb, Barbara Humel, Justin Svoboda, 
 technician: Roman Trochta<br />
 producer: Petra Brodská<br />
 director: Petr Šourek
+
+The project is part of the “Anticipatory design and ethical framework for Distributed Ledger Technologies (blockchain or DAG) and applications (smart contracts, IoTs and supply chain)” supported by Marie Curie Fellowship MCIF 2018-793059.
