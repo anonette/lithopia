@@ -302,6 +302,10 @@ await  participantRegistry.update(partner);
 ```bash
 cd ~/fabric-dev-servers
 
+#kill node-red
+pm2 stop node-red
+pm2 stop ~/runRest.sh
+
 ./startFabric.sh
 
 composer network install --card PeerAdmin@hlfv1 --archiveFile ~/fabric-dev-servers/lithopia/lithopia@0.0.1.bna
@@ -314,11 +318,16 @@ composer card list
 #to run in terminal
 composer-rest-server -c admin@lithopia -n never -u true -w true
 #or to run in background
-cd ~/  
-pm2 start runRest.sh  
+pm2 start ~/runRest.sh  
 
-#run node-red
+#restart  node-red
 pm2 start node-red
+```
+
+#### HTTPS
+check 
+```
+/etc/letsencrypt/renewal-hooks/deploy/renewal_success
 ```
 
 ###errr
